@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DMI Engineering College</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #00509E;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* Banner Section */
+    .banner {
+      background: url('college-banner.jpg') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .banner h2 {
+      color: white;
+      font-size: 2.5em;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    /* About Section */
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    .section {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2em;
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* Departments Section */
+    .departments {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .departments .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 30%;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .departments .card h4 {
+      font-size: 1.5em;
+      color: #00509E;
+      margin-bottom: 10px;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 30%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .chatbot {
+      position: fixed;
+      bottom: 0;
+      right: 20px;
+      width: 300px;
+      background-color: #fff;
+      border: 2px solid #00509E;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .chatbot-header {
+      background-color: #00509E;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .chatbot-body {
+      padding: 10px;
+      height: 300px;
+      overflow-y: auto;
+    }
+    .chatbot-footer {
+      padding: 10px;
+      display: flex;
+    }
+    .chatbot-footer input {
+      width: 80%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .chatbot-footer button {
+      width: 20%;
+      background-color: #00509E;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .chatbot-footer button:hover {
+      background-color: #0073E6;
+    }
+    .chat-message {
+      margin: 10px 0;
+    }
+    .chat-message.user {
+      text-align: right;
+    }
+    .chat-message.user p {
+      background-color: #0073E6;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    .chat-message.bot p {
+      background-color: #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1.1em;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+  <h1>DMI Engineering College</h1>
+</header>
+
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#departments">Departments</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Banner Section -->
+<div class="banner">
+  <h2>Welcome to DMI Engineering College</h2>
+</div>
+
+<!-- About Section -->
+<div class="container" id="about">
+  <div class="section">
+    <h3>About DMI Engineering College</h3>
+    <p>
+      DMI Engineering College is dedicated to offering top-tier education in engineering. We have an excellent faculty, cutting-edge research facilities, and a campus that fosters learning and innovation.
+    </p>
+  </div>
+</div>
+
+<!-- Departments Section -->
+<div class="container" id="departments">
+  <div class="section">
+    <h3>Our Departments</h3>
+    <div class="departments">
+      <div class="card">
+        <h4>Computer Science Engineering</h4>
+        <p>Our CSE department focuses on the latest technologies in software, AI, and data science.</p>
+      </div>
+      <div class="card">
+        <h4>Mechanical Engineering</h4>
+        <p>Mechanical engineering at DMI covers both theoretical knowledge and practical applications in the field.</p>
+      </div>
+      <div class="card">
+        <h4>Civil Engineering</h4>
+        <p>Our Civil Engineering department builds tomorrow's infrastructure with innovation and sustainable practices.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Gallery Section -->
+<div class="container" id="gallery">
+  <div class="section">
+    <h3>Campus Gallery</h3>
+    <div class="gallery">
+      <img src="./d1.jpeg" alt="Campus Building">
+      <img src="./d2.jpeg" alt="Campus">
+      <img src="./d3.jpeg" alt="Campus">
+    </div>
+  </div>
+</div>
+<div class="chatbot">
+    <div class="chatbot-header">
+      DMI Chatbot
+    </div>
+    <div class="chatbot-body" id="chatbot-body">
+      <div class="chat-message bot">
+        <p>Hello! How can I assist you today?</p>
+      </div>
+    </div>
+    <div class="chatbot-footer">
+      <input type="text" id="user-input" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  
+  <script>
+    const chatbotBody = document.getElementById('chatbot-body');
+  
+    function sendMessage() {
+      const userInput = document.getElementById('user-input').value;
+      if (userInput.trim() === '') return;
+  
+      // Add user message to the chat
+      const userMessage = document.createElement('div');
+      userMessage.classList.add('chat-message', 'user');
+      userMessage.innerHTML = `<p>${userInput}</p>`;
+      chatbotBody.appendChild(userMessage);
+  
+      // Clear input
+      document.getElementById('user-input').value = '';
+  
+      // Simulate bot response
+      setTimeout(() => {
+        const botMessage = document.createElement('div');
+        botMessage.classList.add('chat-message', 'bot');
+        
+        // Simple dynamic responses
+        let botText = '';
+        if (userInput.toLowerCase().includes('hello')) {
+          botText = 'Hello! How can I help you today?';
+        } else if (userInput.toLowerCase().includes('departments')) {
+          botText = 'We offer departments in Computer Science, Electrical, Mechanical, Civil Engineering, and more!';
+        } else if (userInput.toLowerCase().includes('contact')) {
+          botText = 'You can reach us at: +123 456 789 or email us at info@dmicollege.edu.';
+        } else {
+          botText = 'I am not sure how to respond to that. Please try asking something else.';
+        }
+        
+        botMessage.innerHTML = `<p>${botText}</p>`;
+        chatbotBody.appendChild(botMessage);
+  
+        // Scroll to the bottom of chat
+        chatbotBody.scrollTop = chatbotBody.scrollHeight;
+      }, 1000);
+    }
+  </script>
+
+<!-- Footer Section -->
+<footer id="contact">
+  <p>&copy; 2024 DMI Engineering College | Contact Us: +123 456 789 | Email: info@dmicollege.edu</p>
+</footer>
+
+</body>
+</html>
